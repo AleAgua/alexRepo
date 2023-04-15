@@ -95,7 +95,7 @@
                                   
                     <section class="example mt-4">
 
-                      <form method="POST" action="http://localhost:3000/api/v1/peliculas" role="form" enctype="multipart/form-data">
+                      <form method="POST" action="http://34.239.250.244:3000/api/v1/peliculas" role="form" enctype="multipart/form-data">
 
                         <input type="hidden" name="_method" value="POST">
                         <label for="NombrePeliculas" class="negrita">NombrePeliculas:</label>
@@ -163,7 +163,7 @@
         </div>
 
         <script type="text/javascript">
-          fetch("http://localhost:3000/api/v1/proveedores").then(response => {
+          fetch("http://34.239.250.244:3000/api/v1/proveedores").then(response => {
               if(response.ok) {
                   return response.json();
               }

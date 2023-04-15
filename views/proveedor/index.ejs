@@ -154,7 +154,7 @@
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 
     <script type="text/javascript">
-      fetch("http://localhost:3000/api/v1/proveedores").then(response => {
+      fetch("http://34.239.250.244:3000/api/v1/proveedores").then(response => {
           if(response.ok) {
               return response.json();
           }
@@ -178,7 +178,7 @@
 
                         <td class=v-align-middle>
 
-                          <form action="http://localhost:3000/api/v1/proveedores/eliminar/${elem._id}" method="POST" onsubmit="return confirmarEliminar()">        
+                          <form action="http://34.239.250.244:3000/api/v1/proveedores/eliminar/${elem._id}" method="POST" onsubmit="return confirmarEliminar()">        
 
                             <a href="/provlee?id=${elem._id}" class="btn btn-dark">Detalles</a>
 

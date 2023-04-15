@@ -169,7 +169,7 @@
         </div>
 
         <script type="text/javascript">
-          fetch("http://localhost:3000/api/v1/proveedores").then(response => {
+          fetch("http://34.239.250.244:3000/api/v1/proveedores").then(response => {
               if(response.ok) {
                   return response.json();
               }
@@ -196,7 +196,7 @@
         var url = new URL(window.location.href);
         const id = url.searchParams.get("id");
 
-        fetch("http://localhost:3000/api/v1/peliculas/"+ id).then(response => {
+        fetch("http://34.239.250.244:3000/api/v1/peliculas/"+ id).then(response => {
             if(response.ok) {
                 return response.json();
             }
@@ -209,12 +209,12 @@
                     ar.forEach((elem) => {
                       console.log(elem.precioPeliculas)
                       document.getElementById("id").setAttribute('value',elem.Idpeliculas); 
-                      document.getElementById('actualizar').action = "http://localhost:3000/api/v1/peliculas/"+ elem.Idpeliculas;
+                      document.getElementById('actualizar').action = "http://34.239.250.244:3000/api/v1/peliculas/"+ elem.Idpeliculas;
                       document.getElementById("NombrePeliculas").setAttribute('value',elem.NombrePeliculas);
                       document.getElementById("existencias").setAttribute('value',elem.existencias);
                       document.getElementById("precioPeliculas").setAttribute('value',elem.precioPeliculas);
                       document.getElementById("Idproveedor").setAttribute('value',elem.Idproveedor);
-                      document.getElementById("imgactual").src = "http://localhost:3000/uploads/" + elem.img;                       
+                      document.getElementById("imgactual").src = "http://34.239.250.244:3000/uploads/" + elem.img;                       
                     });
             };
 

@@ -150,7 +150,7 @@
         var url = new URL(window.location.href);
         const id = url.searchParams.get("id");
 
-        fetch("http://localhost:3000/api/v1/peliculas/"+ id).then(response => {
+        fetch("http://34.239.250.244:3000/api/v1/peliculas/"+ id).then(response => {
             if(response.ok) {
                 return response.json();
             }
@@ -167,7 +167,7 @@
                       document.getElementById("precioPeliculas").innerHTML = elem.precioPeliculas;
                       document.getElementById("Idproveedor").innerHTML = elem.Idproveedor;
             
-                      document.getElementById("img").src = "http://localhost:3000/uploads/" + elem.img; 
+                      document.getElementById("img").src = "http://34.239.250.244:3000/uploads/" + elem.img; 
                     });
 
             };

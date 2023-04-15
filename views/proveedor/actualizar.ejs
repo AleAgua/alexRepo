@@ -150,7 +150,7 @@
         var url = new URL(window.location.href);
         const id = url.searchParams.get("id");
 
-        fetch("http://localhost:3000/api/v1/proveedores/"+ id).then(response => {
+        fetch("http://34.239.250.244:3000/api/v1/proveedores/"+ id).then(response => {
             if(response.ok) {
                 return response.json();
             }
@@ -158,7 +158,7 @@
             if(data) {
                 console.log(data); 
                       document.getElementById("id").setAttribute('value',data._id); 
-                      document.getElementById('actualizar').action = "http://localhost:3000/api/v1/proveedores/"+ data._id;
+                      document.getElementById('actualizar').action = "http://34.239.250.244:3000/api/v1/proveedores/"+ data._id;
                       document.getElementById("NombreProoveedor").setAttribute('value',data.NombreProoveedor);
                       document.getElementById("Telefono").setAttribute('value',data.Telefono); 
             };

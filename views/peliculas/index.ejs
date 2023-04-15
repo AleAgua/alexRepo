@@ -150,7 +150,7 @@
 
     <script type="text/javascript" src="./js/bootstrap.min.js"></script>
     <script type="text/javascript">
-      fetch("http://localhost:3000/api/v1/peliculas").then(response => {
+      fetch("http://34.239.250.244:3000/api/v1/peliculas").then(response => {
           if(response.ok) {
               return response.json();
           }
@@ -177,10 +177,10 @@
                         <td class=v-align-middle>${elem.existencias}</td>
                         <td class=v-align-middle>${elem.precioPeliculas}</td>
                         <td class=v-align-middle>${elem.Idproveedor}</td>
-                        <td class=v-align-middle><img src=http://localhost:3000/uploads/${elem.img} class=img-fluid style=max-width:50px></td>
+                        <td class=v-align-middle><img src=http://34.239.250.244:3000/uploads/${elem.img} class=img-fluid style=max-width:50px></td>
                         <td class=v-align-middle>
 
-                          <form action="http://localhost:3000/api/v1/peliculas/eliminar/${elem.Idpeliculas}" method="POST" onsubmit="return confirmarEliminar()">        
+                          <form action="http://34.239.250.244:3000/api/v1/peliculas/eliminar/${elem.Idpeliculas}" method="POST" onsubmit="return confirmarEliminar()">        
 
                             <a href="/leer?id=${elem.Idpeliculas}" class="btn btn-dark">Detalles</a>
 
